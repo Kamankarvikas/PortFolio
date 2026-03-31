@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import {
   SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiExpress, SiNextdotjs,
   SiMongodb, SiMysql, SiDocker, SiGit, SiGithub,
-  SiBitbucket, SiPostman, SiJira, SiFirebase, SiHtml5, SiCss, SiRedux,
+  SiBitbucket, SiPostman, SiJira, SiFirebase, SiHtml5, SiCss, SiRedux, SiCloudinary,
 } from 'react-icons/si'
 import { FaJava, FaAws } from 'react-icons/fa'
 
@@ -45,6 +45,7 @@ const skillCategories = [
       { name: 'AWS', icon: FaAws, color: '#FF9900' },
       { name: 'Docker', icon: SiDocker, color: '#2496ED' },
       { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
+      { name: 'Cloudinary', icon: SiCloudinary, color: '#3448C5' },
     ],
   },
   {

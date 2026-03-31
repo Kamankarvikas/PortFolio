@@ -12,7 +12,8 @@ const projects = [
       'Implemented JWT authentication and API communication using Axios',
     ],
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Redux Toolkit', 'JWT'],
-    github: 'https://github.com/Kamankarvikas/Real-Estate'
+    github: 'https://github.com/Kamankarvikas/Real-Estate',
+    live: 'https://real-estate-opal-tau.vercel.app/'
   },
   {
     title: 'Opportunity Hub',
@@ -25,6 +26,7 @@ const projects = [
     ],
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Axios', 'JWT'],
     github: 'https://github.com/Kamankarvikas/Opportunity-Hub',
+    live: 'https://opportunity-hub-fe8z.vercel.app/'
   },
   {
     title: 'Online Railway Reservation',
@@ -36,7 +38,8 @@ const projects = [
       'Built with PHP backend, Bootstrap frontend, and MySQL database',
     ],
     tech: ['PHP', 'JavaScript', 'jQuery', 'MySQL', 'Bootstrap', 'AJAX'],
-    github: 'https://github.com/Kamankarvikas/online-railway-reservation'
+    github: 'https://github.com/Kamankarvikas/online-railway-reservation',
+    live: 'https://github.com/Kamankarvikas/online-railway-reservation'
   },
 ]
 
@@ -48,7 +51,7 @@ function ProjectCard({ project, index }) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.15 }}
       className="group bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300"
-    >
+    > 
       {/* Top accent bar */}
       <div className="h-1.5 bg-gradient-to-r from-purple-500 to-cyan-400" />
 
@@ -65,6 +68,9 @@ function ProjectCard({ project, index }) {
           <div className="flex items-center gap-1">
             <a href={project.github} target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-xl text-gray-400 hover:text-purple-500 hover:bg-purple-500/10 transition-all">
               <FiGithub size={18} />
+            </a>
+            <a href={project.live} target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-xl text-gray-400 hover:text-cyan-500 hover:bg-cyan-500/10 transition-all">
+              <FiExternalLink size={18} />
             </a>
           </div>
         </div>
